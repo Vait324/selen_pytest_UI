@@ -2,8 +2,8 @@ from selenium.webdriver.common.by import By
 import pytest
 
 
-@pytest.mark.language
-def test_language(browser):
+@pytest.mark.items
+def test_items(browser):
     browser.implicitly_wait(5)
     url = 'http://selenium1py.pythonanywhere.com/catalogue/coders-at-work_207/'
     browser.get(url)

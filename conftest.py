@@ -9,7 +9,7 @@ def pytest_addoption(parser):
         action='store',
         default='en',
         help='Choose language',
-        choices=('en', 'ru', 'es'),)
+        choices=('en', 'ru', 'es', 'fr'),)
 
 
 @pytest.fixture

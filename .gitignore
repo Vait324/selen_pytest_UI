@@ -6,3 +6,4 @@ selenv
 
 
 !.gitignore
+!__init__.py
