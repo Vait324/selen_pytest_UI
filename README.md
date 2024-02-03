@@ -1,2 +1,4 @@
 # selen_pytest_UI
-Testing the selenium1py.pythonanywhere.com website for various languages.
+Examples of testing practices by pytest and selenium.
+
+Don't forget about requirements.txt, there are some dependencies for executing tests.
