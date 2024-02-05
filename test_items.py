@@ -33,14 +33,15 @@ def test_items(browser):
     browser.implicitly_wait(5)
     url = 'http://selenium1py.pythonanywhere.com/catalogue/coders-at-work_207/'
     browser.get(url)
-    message = 'Incorrect amount of buttons'
     buttons = browser.find_elements(
         By.CSS_SELECTOR, '.btn-add-to-basket'
         )
-    assert len(buttons) == 1, message
+    buttons_amount = len(buttons)
+    message = f'Incorrect amount of buttons. Should be 1, but {buttons_amount}'
+    assert buttons_amount == 1, message
 
 
-@pytest.mark.pages
+@pytest.mark.simple_pages
 @pytest.mark.parametrize('url', (links_list))
 def test_login(browser, url):
     browser.get(url)

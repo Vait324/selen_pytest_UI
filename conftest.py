@@ -14,6 +14,7 @@ def pytest_addoption(parser):
 
 @pytest.fixture
 def browser(request):
+    """Fixture that start Chrome webdriver with choosed browser language."""
     user_language = request.config.getoption('language')
     options = Options()
     options.add_experimental_option(
